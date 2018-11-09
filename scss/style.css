@@ -1,0 +1,336 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+div#wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 3rem auto auto auto 3rem;
+      grid-template-rows: 3rem auto auto auto 3rem;
+  -ms-grid-columns: 10rem 1fr;
+      grid-template-columns: 10rem 1fr;
+  background-color: #bbc2ca;
+      grid-template-areas: "links links" "social social" "header header" "main main" "footer footer";
+}
+
+.hamburger {
+  grid-area: hamburger;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 2%;
+  font-size: 2rem;
+}
+
+.hamburger a {
+  color: white;
+  text-decoration: none;
+}
+
+div.social-icons {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: social;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-right: 2%;
+}
+
+div.social-icons a {
+  font-size: 1.8rem;
+  padding-left: 0.5rem;
+  color: white;
+  color: #424e64;
+}
+
+div.social-icons a:hover {
+  color: #bbc2ca;
+}
+
+header {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+  color: #424e64;
+  padding: 1rem 2%;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+header h2 {
+  font-size: 1.12rem;
+  font-weight: 700;
+}
+
+main {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: main;
+  min-height: 300px;
+  background-color: white;
+}
+
+main p {
+  margin: 1rem 2%;
+}
+
+main h1 {
+  font-size: 2rem;
+  margin: 1.5rem 2% 0.5rem 2%;
+  color: #424e64;
+}
+
+footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+footer p {
+  text-align: center;
+  color: #424e64;
+  padding: 0.75rem 0;
+}
+
+nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: links;
+  background-color: #bbc2ca;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+nav ul.closed {
+  display: none;
+}
+
+nav ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.6rem 2%;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+}
+
+nav ul li.active a {
+  background-color: #424e64;
+}
+
+nav ul li ul li a {
+  padding-left: 8%;
+}
+
+nav button {
+  width: 72px;
+  height: 32px;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-size: 86%;
+  background-position: center center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 6px 0 6px 2%;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (min-width: 560px) {
+  div#wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 3rem auto auto auto 3rem;
+        grid-template-rows: 3rem auto auto auto 3rem;
+    -ms-grid-columns: 10rem 1fr;
+        grid-template-columns: 10rem 1fr;
+    background-color: #bbc2ca;
+        grid-template-areas: "links links" "social social" "header header" "main main" "footer footer";
+  }
+  div.hamburger {
+    display: none;
+  }
+  nav {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: links;
+    position: relative;
+  }
+  nav ul.closed {
+    display: block;
+  }
+  nav button {
+    display: none;
+  }
+  nav ul {
+    margin-left: 2%;
+  }
+  nav ul li {
+    float: left;
+  }
+  nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 0.7rem 0.9rem;
+    -webkit-transition: background 0.2 ease;
+    transition: background 0.2 ease;
+  }
+  nav ul li a span {
+    display: none;
+  }
+  nav ul li a:hover {
+    background-color: #2e3645;
+  }
+  nav ul li ul {
+    left: -999px;
+    z-index: 99;
+    background-color: #566683;
+    position: absolute;
+    width: 10rem;
+  }
+  nav ul li:hover ul {
+    left: auto;
+  }
+  nav ul li ul li {
+    float: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  nav ul li a span {
+    display: inline;
+  }
+}
+/*# sourceMappingURL=style.css.map */

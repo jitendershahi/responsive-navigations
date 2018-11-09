@@ -1,0 +1,97 @@
+// div#wrapper {
+//     display: grid;
+//     grid-template-rows: 5rem auto 3rem;
+//     grid-template-columns: 10rem auto 12rem;
+//     background-color: $secondaryColor;
+
+//     grid-template-areas:
+//         "header header social"
+//         "links main main"
+//         "footer footer footer"
+// }
+
+div#wrapper {
+    display: grid;
+    grid-template-rows: 3rem auto auto auto 3rem;
+    grid-template-columns: 10rem 1fr;
+    background-color: $secondaryColor;
+
+    grid-template-areas:
+        "links links"
+        "social social"
+        "header header"
+        "main main"
+        "footer footer"
+
+}
+
+div.hamburger {
+    display: none;
+}
+
+nav {
+    grid-area: links;
+    position: relative;
+
+    ul.closed {
+        display: block;
+    }
+
+    button {
+        display: none;
+    }
+
+    ul {
+        margin-left: 2%;
+    }
+
+    ul li {
+        float: left;
+
+        a {
+            border: none;
+            border-right: 1px solid rgba(0, 0, 0, 0.3);
+            padding: 0.7rem 0.9rem;
+            transition: background 0.2 ease;
+        }
+    }
+
+    ul li a span {
+        display: none;
+    }
+
+    ul li a:hover {
+        background-color: darken($primaryColor, 10%);
+    }
+
+    ul li ul {
+        left: -999px;
+        z-index: 99;
+        background-color: lighten($primaryColor, 10%);
+        position: absolute;
+        width: 10rem;
+    }
+
+    ul li:hover ul {
+        left: auto;
+    }
+
+    ul li ul li {
+        float: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+}
+
+// nav {
+//     height: auto;
+
+//     ul li {
+//         border-bottom: 1px solid $primaryColor;
+
+//         a {
+//             border-radius: 0;
+//             background-color: transparent;
+//             margin: 0;
+//         }
+//     }
+// }

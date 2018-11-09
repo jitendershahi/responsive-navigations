@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Auto Dealership</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
+    <link rel="stylesheet" href="./scss/style.css">
+
+</head>
+
+<body id="body">
+
+    <div id="wrapper">
+
+        <header>
+            <h1>Paul's Autos</h1>
+            <h2>Quality you can ride in</h2>
+        </header>
+
+        <nav>
+            <button id="button">&#9776;</button>
+            <ul id="primarynav" class="closed">
+                <li class="active"><a href=""><span>CURRENT</span>DEALS</a></li>
+                <li><a href=""><span>POPULAR</span>DESTINATIONS</a>
+                    <ul>
+                        <li><a href="">Asia</a></li>
+                        <li><a href="">Cariibean</a></li>
+                        <li><a href="">Central America</a></li>
+                        <li><a href="">Europe</a></li>
+                    </ul>
+                </li>
+                <li><a href=""><span>FAVORITE</span>RESORTS</a>
+                    <ul>
+                        <li><a href="">Hotel Maroma</a></li>
+                        <li><a href="">Atlantis</a></li>
+                    </ul>
+                </li>
+                <li><a href=""><span>Awesome</span>Cruises</a></li>
+            </ul>
+        </nav>
+
+        <div class="social-icons">
+            <a href="">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="">
+                <i class="fa fa-twitter-square"></i>
+            </a>
+            <a href="">
+                <i class="fa fa-youtube"></i>
+            </a>
+            <a href="">
+                <i class="fa fa-google-plus-square"></i>
+            </a>
+        </div>
+
+        <!-- <div class="hamburger">
+            <a href="#navLinks">&#9776;</a>
+        </div> -->
+
+        <main>
+            <h1>CSS Grids</h1>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
+                at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing
+                packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
+                will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes
+                by accident, sometimes on purpose (injected humour and the like It is a long established fact that a reader
+                will be distracted by the readable content of a page when looking at its layout. The point of using Lorem
+                Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using </p>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
+                at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing
+                packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
+                will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes
+                by accident, sometimes on purpose (injected humour and the like It is a long established fact that a reader
+                will be distracted by the readable content of a page when looking at its layout. The point of using Lorem
+                Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using </p>
+        </main>
+
+        <footer>
+            <p>&copy;World News &bull;
+                <a href="tel:9866995577;">9875-8899-2288</a>
+            </p>
+        </footer>
+
+        <!-- <nav id="navLinks">
+            <div class="hamburger">
+                <a href="#body">&#9776;</a>
+            </div>
+            <ul>
+                <li class="active">
+                    <a href="">CSS Grids</a>
+                </li>
+                <li>
+                    <a href="">Politics</a>
+                </li>
+                <li>
+                    <a href="">Business</a>
+                </li>
+                <li>
+                    <a href="">License</a>
+                </li>
+            </ul>
+        </nav> -->
+
+    </div>
+
+</body>
+
+<script>
+
+    function toggleMenu() {
+        document.getElementById('primarynav').classList.toggle("closed")
+    }
+
+    var x = document.getElementById('button')
+    x.onclick = toggleMenu;
+</script>
+
+</html>
